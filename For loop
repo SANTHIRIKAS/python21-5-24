@@ -1,0 +1,9 @@
+def print_numbers_in_range(a, b):
+    for num in range(a, b + 1):
+        print(num, end=" ")
+
+# Example usage:
+start = 3
+end = 8
+print("Numbers between", start, "and", end, "are:")
+print_numbers_in_range(start, end)
