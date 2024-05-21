@@ -1,0 +1,12 @@
+def find_nth_number(n, k):
+    count = 0
+    num = 0
+    while count < n:
+        num += 1
+        if '0' + str(k) in str(num) or num % k == 0:
+            count += 1
+    return num
+n = 5
+k = 3
+result = find_nth_number(n, k)
+print("The", n, "th number containing digit", k, "or divisible by", k, "is:", result)
