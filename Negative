@@ -1,0 +1,16 @@
+def count_positive_negative_numbers(n):
+    positive_count = 0
+    negative_count = 0
+    i = 0
+    while i < n:
+        num = float(input("Enter number {}: ".format(i + 1)))
+        if num > 0:
+            positive_count += 1
+        elif num < 0:
+            negative_count += 1
+        i += 1
+    return positive_count, negative_count
+n = int(input("Enter the value of n: "))
+positive, negative = count_positive_negative_numbers(n)
+print("Number of positive numbers entered:", positive)
+print("Number of negative numbers entered:", negative)
