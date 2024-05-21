@@ -1,0 +1,11 @@
+def sum_of_n_numbers(n):
+    total = 0
+    count = 1
+    while count <= n:
+        total += count
+        count += 1
+    return total
+
+# Example usage:
+num = 5
+print("Sum of first", num, "numbers is:", sum_of_n_numbers(num))
