@@ -1,0 +1,14 @@
+def find_divisibles_and_sum(n, m):
+    divisible_by_9 = []
+    for i in range(n, m + 1):
+        if i % 9 == 0:
+            divisible_by_9.append(i)
+    sum_of_divisibles = sum(divisible_by_9)
+
+    return divisible_by_9, sum_of_divisibles
+n = 10
+m = 50
+divisibles, total_sum = find_divisibles_and_sum(n, m)
+print("Numbers divisible by 9:", divisibles)
+print("Sum of numbers divisible by 9:", total_sum)
+```
